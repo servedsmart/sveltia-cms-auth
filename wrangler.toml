@@ -3,5 +3,5 @@ compatibility_date = "2023-03-24"
 main = "src/index.js"
 # FIXME: Disable this if possible
 workers_dev = true
-preview_urls = false
+preview_urls = true
 send_metrics = false
