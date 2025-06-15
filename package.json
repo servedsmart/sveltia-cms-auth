@@ -10,9 +10,9 @@
     "check:cspell": "cspell --no-progress",
     "check:prettier": "prettier --check .",
     "check:eslint": "eslint .",
-    "deploy": "NODE_ENV=production npx -y wrangler deploy",
-    "dev": "npx -y wrangler dev",
-    "start": "npx -y wrangler dev"
+    "deploy": "NODE_ENV=production wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev"
   },
   "devDependencies": {
     "@types/node": "^24.0.7",
@@ -20,9 +20,9 @@
     "eslint": "^8.57.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^10.1.5",
-    "eslint-plugin-jsdoc": "^51.2.3",
-    "prettier": "^3.6.2",
-    "wrangler": "4.22.0"
+    "eslint-plugin-jsdoc": "^51.0.1",
+    "prettier": "^3.5.3",
+    "wrangler": "^4.20.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
