@@ -5,13 +5,14 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "wrangler dev",
-    "deploy": "wrangler deploy",
     "check": "pnpm run '/^check:.*/'",
     "check:audit": "pnpm audit",
     "check:cspell": "cspell --no-progress",
     "check:prettier": "prettier --check .",
-    "check:eslint": "eslint ."
+    "check:eslint": "eslint .",
+    "deploy": "NODE_ENV=production npx -y wrangler deploy",
+    "dev": "npx -y wrangler dev",
+    "start": "npx -y wrangler dev"
   },
   "devDependencies": {
     "@types/node": "^24.0.7",
