@@ -17,7 +17,7 @@ jobs:
           submodules: recursive
           fetch-depth: 1
 
-      - name: Install Dependencies with npm
+      - name: Install dependencies with npm
         run: npm ci
 
       - name: Deploy to Workers
